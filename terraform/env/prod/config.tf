@@ -7,7 +7,7 @@ locals {
 terraform {
   backend "s3" {
     bucket = "esta-mcn-terraform-state"
-    key    = "state/terraform_dev.tfstate"
+    key    = "state/terraform_prod.tfstate"
     region = "ca-central-1"
   }
   required_providers {
